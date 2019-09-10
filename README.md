@@ -13,16 +13,21 @@ npm install --save useinterval
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import { useInterval } from 'useinterval'
 
-import { useMyHook } from 'useinterval'
-
-const Example = () => {
-  const example = useMyHook()
+const App = () => {
+  let [example, setExample] = useState(0)
+  useInterval(() => {
+    setExample(x => setExample(x + 1))
+  }, 1000)
   return (
-    <div>{example}</div>
+    <div>
+      {example}
+    </div>
   )
 }
+export default App
 ```
 
 ## License
