@@ -1,8 +1,11 @@
-import React from 'react'
-import { useMyHook } from 'useinterval'
+import React, { useState } from 'react'
+import { useInterval } from 'useinterval'
 
 const App = () => {
-  const example = useMyHook()
+  let [example, setExample] = useState(0)
+  useInterval(() => {
+    setExample(x => setExample(x + 1))
+  }, 1000)
   return (
     <div>
       {example}

@@ -1,5 +1,5 @@
 {
-  "name": "useinterval",
+  "name": "@slynch13/useinterval",
   "version": "1.0.0",
   "description": "React hook for setting up an interval",
   "author": "slynch13",
