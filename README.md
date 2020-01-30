@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save useinterval
+npm install --save @slynch13/useinterval
 ```
 
 ## Usage
